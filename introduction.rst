@@ -200,7 +200,7 @@ Proofs in Lean can access a library of prior mathematical results, all verified 
       have : 2 ∣ b^2 := by
         simp [Eq.symm this]
       have : 2 ∣ b := by
-        apply dvd_of_dvd_pow prime_two this
+        exact dvd_of_dvd_pow prime_two this
       have : 2 ∣ gcd a b := by
         apply dvd_gcd
         . assumption
